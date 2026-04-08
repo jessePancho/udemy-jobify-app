@@ -7,11 +7,13 @@ import React from "react";
 const Navbar = () => {
   return (
     <nav className="bg-muted py-4 sm:px-16 lg:px-24 px-4 flex items-center justify-between">
-      <LinksDropdown />
-      <div className="flex items-center gap-x--4">
-        <ThemeToggle />
+      <div>
+        <LinksDropdown />
       </div>
-      <UserButton />
+      <div className="flex items-center gap-x-4">
+        <ThemeToggle />
+        <UserButton />
+      </div>
     </nav>
   );
 };
